@@ -12,20 +12,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Check current dir
-        run: |
-          pwd
-          dir
-
-
-      
-      - name: Install dependencies
-        run: |
-          whoami
-          pwd
-          dir
-          pip install -r requirements.txt
-
       - name: Run Robot Framework tests
         run: |
           robot tests/
