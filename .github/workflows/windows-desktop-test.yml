@@ -11,9 +11,10 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      - name: Check Python environment variables
+      - name: Add Python to PATH and verify installation
         run: |
-         echo $Env:Path
+         $env:Path += ";C:\Users\rohan\AppData\Local\Programs\Python\Python310;C:\Users\rohan\AppData\Local\Programs\Python\Python310\Scripts"
+         echo $env:Path  # Print the updated PATH for debugging
          where python
          where pip
          python --version
