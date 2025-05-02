@@ -20,7 +20,7 @@ jobs:
       - name: Install Python dependencies
         run: |
           pip install -r requirements.txt
-        shell: pwsh
+        shell: powershell
 
       - name: Run Robot Framework tests
         run: |
