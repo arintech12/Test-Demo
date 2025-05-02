@@ -1,4 +1,5 @@
 *** Settings ***
+Library    Process
 Library    pywinauto
 
 *** Test Cases ***
