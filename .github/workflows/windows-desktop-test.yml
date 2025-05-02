@@ -11,7 +11,15 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-
+      - name: Check Python environment variables
+        run: |
+         echo $Env:Path
+         where python
+         where pip
+         python --version
+         pip --version
+        shell: powershell
+      
       - name: Run Robot Framework tests
         run: |
           robot tests/
