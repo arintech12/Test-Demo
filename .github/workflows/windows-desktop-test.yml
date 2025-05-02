@@ -6,7 +6,7 @@ on:
 
 jobs:
   robot-tests:
-    runs-on: [self-hosted, windows]
+    runs-on: windows-latest
 
     steps:
       - name: Checkout repository
